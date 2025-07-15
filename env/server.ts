@@ -3,6 +3,15 @@
 import { createEnv } from '@t3-oss/env-nextjs'
 import { z } from 'zod'
 
+console.log('ENV CHECK START');
+console.log({
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+  TAVILY_API_KEY: process.env.TAVILY_API_KEY,
+  DATABASE_URL: process.env.DATABASE_URL,
+  BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
+  SCIRA_API_KEY: process.env.SCIRA_API_KEY,
+});
+
 export const serverEnv = createEnv({
   server: {
     // Core AI Models
