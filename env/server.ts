@@ -55,7 +55,7 @@ export const serverEnv = createEnv({
     COINGECKO_API_KEY: z.string().optional().default(''),
     NEXT_PUBLIC_MAPBOX_TOKEN: z.string().optional().default(''),
     NEXT_PUBLIC_POSTHOG_KEY: z.string().optional().default(''),
-    NEXT_PUBLIC_POSTHOG_HOST: z.string().optional().default(''),
+    NEXT_PUBLIC_POSTHOG_HOST: z.string().url().optional().default('http://localhost:3000'),
     NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: z.string().optional().default(''),
   },
 
