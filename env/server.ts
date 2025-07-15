@@ -53,6 +53,10 @@ export const serverEnv = createEnv({
     MEM0_PROJECT_ID: z.string().optional().default(''),
     SMITHERY_API_KEY: z.string().optional().default(''),
     COINGECKO_API_KEY: z.string().optional().default(''),
+    NEXT_PUBLIC_MAPBOX_TOKEN: z.string().optional().default(''),
+    NEXT_PUBLIC_POSTHOG_KEY: z.string().optional().default(''),
+    NEXT_PUBLIC_POSTHOG_HOST: z.string().optional().default(''),
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: z.string().optional().default(''),
   },
 
   experimental__runtimeEnv: process.env,
